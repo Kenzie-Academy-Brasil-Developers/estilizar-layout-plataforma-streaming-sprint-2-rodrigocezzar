@@ -20,19 +20,125 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 }
 
 /*BODY*/
-	body{
+	.body{
+		background-color: #00002e;
 
 	}
 
 /*TOPO*/
-	header.topo{
-		
+	.topo{
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		flex-wrap: wrap;
+		margin: 0 auto;
 	}
 
 /*RODAPÉ*/
+.footer {
+	display: flex;
+	justify-content: center;
+  height: 10%;
+	width: 40%;
+	margin: 0 auto;
+	font-weight: bolder;
+	margin-top: 20px;
+}
+
+.footer button {
+	font-weight: bolder;
+	width: 50%;
+	color: white;
+	border: 1px solid white;
+	background : transparent;
+}
 	
 
 /*PÁGINA INICIAL*/
-	div.pg-home{
-		
+	.pg-home{	
+		font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
 	}
+
+	.pg-home h2 {
+		color: white;
+		align-content: center;
+		font-weight: bolder;
+		font-size: 50px;
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		margin: 0 auto;
+		padding: 50px;
+	}
+
+
+.users {
+	list-style: none;
+	justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 858px;
+	margin: 0 auto;
+	padding: 30px;
+}
+
+.users li {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 186px;
+}
+
+h3 {
+	display: flex;
+	justify-content: center;
+	color: white;
+	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-weight: bolder;
+}
+
+.fig img {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+  flex: 0 1 auto;
+  flex-shrink: 0;
+}
+
+.cap {
+	color: transparent;
+}
+
+
+@media (max-width: 710px) {
+	.users {
+		flex-wrap: wrap;
+		width: 30%;
+		flex-grow: initial;
+	}
+	.topo{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		margin: 0 auto;
+	}
+	.pg-home h2 {
+		color: white;
+		align-content: center;
+		font-weight: bolder;
+		font-size: 50px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		width: 30%;
+		flex-wrap: wrap;
+	}
+}
