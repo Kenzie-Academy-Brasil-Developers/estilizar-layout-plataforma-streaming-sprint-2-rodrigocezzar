@@ -116,11 +116,12 @@ h3 {
 }
 
 
-@media (max-width: 710px) {
+@media (max-width: 800px) {
 	.users {
+		display: flex;
 		flex-wrap: wrap;
-		width: 30%;
-		flex-grow: initial;
+		width: 80%;
+		margin-left: auto;
 	}
 	.topo{
 		display: flex;
@@ -129,16 +130,21 @@ h3 {
 		align-items: center;
 		flex-wrap: wrap;
 		margin: 0 auto;
+		width: 50%;
 	}
-	.pg-home h2 {
-		color: white;
-		align-content: center;
-		font-weight: bolder;
-		font-size: 50px;
+	.fig img {
 		display: flex;
-		align-items: center;
 		flex-direction: column;
-		width: 30%;
-		flex-wrap: wrap;
+		width: 100%;
+		flex: 0 1 auto;
+		flex-shrink: 0;	
+	}
+	.footer button {
+		font-weight: bolder;
+		width: 50%;
+		color: white;
+		border: 1px solid white;
+		background : transparent;
+		margin-bottom: 15px;
 	}
 }
